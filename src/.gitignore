@@ -7,10 +7,15 @@ pom.xml.asc
 *.jar
 *.class
 /.lein-*
-/.nrepl-port
+./nrepl-port
 /.prepl-port
 .hgignore
 .hg/
 .calva/
 .clj-kondo/
 .lsp/
+.calva/
+.nrepl-port
+/calva/
+/.lein/
+/target
