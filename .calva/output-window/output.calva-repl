@@ -1,0 +1,113 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/gregorybrooks/Clojure/clojure_goodness_notebook/mrhaki; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:63204 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉mrhaki.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉mrhaki.core꞉> 
+; Jack-in done.
+clj꞉mrhaki.core꞉> 
+; Evaluating file: split.clj
+true
+clj꞉core.split꞉> 
+; Syntax error compiling at (src/core/split.clj:9:10).
+; Unable to resolve symbol: less-than-5? in this context
+clj꞉core.split꞉> 
+; Syntax error compiling at (src/core/split.clj:9:10).
+; Unable to resolve symbol: less-than-5? in this context
+clj꞉core.split꞉> 
+; Syntax error compiling at (src/core/split.clj:9:10).
+; Unable to resolve symbol: less-than-5? in this context
+clj꞉core.split꞉> 
+true
+clj꞉core.split꞉> 
+#'core.split/less-than-5?
+clj꞉core.split꞉> 
+#'core.split/numbers
+clj꞉core.split꞉> 
+#'core.split/less-than-5?
+clj꞉core.split꞉> 
+#'core.split/numbers
+clj꞉core.split꞉> 
+[(0 1 2 3 4) (5 6 7 8 9 10)]
+clj꞉core.split꞉> 
+[(0 1 2 3 4) (5 6 7 8 9 10)]
+clj꞉core.split꞉> 
+[([:language "Clojure"] [:alias "mrhaki"] [:age 47]) ([:country "NL"])]
+clj꞉core.split꞉> 
+#'core.split/less-than-5?
+clj꞉core.split꞉> 
+#'core.split/numbers
+clj꞉core.split꞉> 
+[(0 1 2 3 4) (5 6 7 8 9 10)]
+clj꞉core.split꞉> 
+[(0 1 2 3 4) (5 6 7 8 9 10)]
+clj꞉core.split꞉> 
+[([:language "Clojure"] [:alias "mrhaki"] [:age 47]) ([:country "NL"])]
+clj꞉core.split꞉> 
+[([:language "Clojure"] [:alias "mrhaki"]) ([:age 47] [:country "NL"])]
+clj꞉core.split꞉> 
+; Evaluating file: mapcat.clj
+true
+clj꞉core.mapcat꞉> 
+true
+clj꞉core.mapcat꞉> 
+(1 11 2 12 3 13)
+clj꞉core.mapcat꞉> 
+(1 100 101 2 200 202 3 300 303)
+clj꞉core.mapcat꞉> 
+; Evaluating file: map_indexed.clj
+; 
+; ; clj  core.map-indexed 
+; Syntax error reading source at (src/core/map_indexed.clj:41:11).
+; Unmatched delimiter: )
+; Evaluation of file map_indexed.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉core.map-indexed꞉> 
+; Syntax error compiling at (src/core/map_indexed.clj:39:21).
+; Unable to resolve symbol: number in this context
+clj꞉core.map-indexed꞉> 
+(0 20 20 6 4)
+clj꞉core.map-indexed꞉> 
+(0 1 2 3 4)
+clj꞉core.map-indexed꞉> 
