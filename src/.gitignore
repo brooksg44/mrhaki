@@ -1,3 +1,4 @@
+# Leiningen
 /target
 /classes
 /checkouts
@@ -7,15 +8,20 @@ pom.xml.asc
 *.jar
 *.class
 /.lein-*
-./nrepl-port
-/.prepl-port
-.hgignore
-.hg/
+/.lein/
+
+# REPL
+.nrepl-port
+.prepl-port
+
+# IDE/Editor
 .calva/
 .clj-kondo/
 .lsp/
-.calva/
-.nrepl-port
-/calva/
-/.lein/
-/target
+
+# Version Control
+.hgignore
+.hg/
+
+# OS specific
+.DS_Store
